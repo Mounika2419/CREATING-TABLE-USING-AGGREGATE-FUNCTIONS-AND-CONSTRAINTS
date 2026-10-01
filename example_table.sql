@@ -1,0 +1,18 @@
+create table bank(bank_id int primary key,cust_name varchar(20),bank_name varchar(30),amount decimal(5,2),transaction int);
+desc bank;
+insert into bank values(1,'anil','sbi',200.00,25);
+insert into bank values(2,'ramu','union',300.00,25);
+insert into bank values(3,'raju','union',400.00,25);
+insert into bank values(4,'ravi','andhra',500.00,23);
+ insert into bank values(5,'amala','canara',600.00,15);
+  select *from bank;
+  select *from bank where transaction>20;
+   select count(8) from bank;
+   select cust_name ,amount from bank;
+   select cust_name from bank where bank_name='union';
+   select sum(amount) from bank;
+   select *from bank where cust_name like 'r%';
+   select *from bank where cust_name like 'a%';
+   SELECT MAX(AMOUNT) FROM BANK;
+   SELECT Min(AMOUNT) FROM BANK;
+   SELECT AVG(AMOUNT) FROM BANK;
